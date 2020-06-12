@@ -1,0 +1,110 @@
+/* Позиционирование в шапке */
+nav.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .site-nav:last-child {
+  margin-left: auto;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .contact:first-child {
+  margin-right: 30px;
+}
+
+/* Позиционирование в студия */
+/* Особенности компании */
+.features > .list {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.features > .item {
+  display: block;
+  width: calc((100% - 90px) / 4);
+  /* background-color: plum; */
+}
+
+.features > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Чем мы занимаемся */
+.list.directions {
+  display: flex;
+}
+
+.directions > .item {
+  display: block;
+  width: calc((100% - 60px) / 3);
+}
+
+.directions > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Наша команда */
+.list.members {
+  display: flex;
+}
+.list.members > .item {
+  display: block;
+  width: calc((100% - 90px) / 4);
+}
+
+.list.members > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list.social {
+  display: flex;
+  justify-content: center;
+
+  padding: 0px 32px 24px;
+}
+
+.list.social > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Постоянные клиенты */
+.list.companies {
+  display: flex;
+}
+
+.list.companies > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Позиционирование в портфолио */
+.keys {
+  display: flex;
+  justify-content: center;
+}
+.keys .item {
+  padding-bottom: 20px;
+}
+.keys .item:not(:last-child) {
+  margin-right: 8px;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project .item {
+  display: block;
+  width: calc((100% - 60px) / 3);
+  margin-top: 30px;
+  border: 1px solid #eeeeee;
+}
+.project .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}

@@ -13,6 +13,7 @@
   --secondary-white-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --border-color: #ececec;
+  --project-bdr-color: #eeeeee;
   --footer-bdr-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -43,6 +44,9 @@ body {
 header {
   border-bottom: 1px solid var(--border-color);
 }
+/* img {
+  display: block;
+} */
 
 button {
   border: none;
@@ -54,6 +58,7 @@ button {
 
 .list {
   list-style: none;
+  margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
 }
@@ -64,7 +69,7 @@ button {
 }
 .container {
   margin: 0 auto;
-  width: 600px;
+  width: 1200px;
   padding: 0 15px;
 
   /* outline: 2px solid navy; */
@@ -85,6 +90,12 @@ button {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 80px;
 }
 
 .web {
@@ -110,6 +121,9 @@ button {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--secondary-text-color);
 }
 
@@ -124,6 +138,8 @@ button {
 
 .mail,
 .tel {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -197,6 +213,7 @@ button {
   text-align: center;
 
   margin-top: 0px;
+  margin-bottom: 50px;
 
   color: var(--secondary-text-color);
 }
@@ -216,13 +233,30 @@ button {
 }
 
 /* Наша команда */
+.section.team {
+  background-color: var(--secondary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card {
+  background-color: var(--primary-white-color);
+
+  text-align: center;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.card > img {
+  display: block;
+}
+
 /* Карточки нашей команды */
 .card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 
-  margin-top: 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   color: var(--secondary-text-color);
 }
@@ -238,9 +272,29 @@ button {
 }
 
 /* ссылки на соцсети */
+.list.social .link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-text-color);
+  border-radius: 6px;
+}
+.list.social .link:hover {
+  background-color: var(--accent-color);
+}
+
 a[aria-label]:hover,
 a[aria-label]:focus {
   color: var(--accent-color);
+}
+
+/* Постоянные клиенты */
+.list.companies > .item {
+  display: block;
+  outline: 1px solid navy;
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+  text-align: center;
 }
 
 /* Footer */
@@ -288,6 +342,9 @@ address {
 }
 
 /* История проектов portfolio */
+.project .item {
+  border: 1px solid var(--project-bdr-color);
+}
 .project h4,
 .project p {
   margin-top: 0px;
