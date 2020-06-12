@@ -108,3 +108,10 @@ nav.container {
 .project .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
+/* Позиционирование в футере */
+.under {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

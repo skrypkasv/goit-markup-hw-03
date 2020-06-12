@@ -200,6 +200,19 @@ button {
   margin-bottom: 0px;
 }
 
+/* Чем мы занимаемся */
+.list.directions img {
+  display: block;
+}
+.directions .section-subtitle {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+
+  text-align: center;
+}
+
 /* Заголовки секций */
 .invisible {
   height: 0px;
@@ -302,22 +315,48 @@ footer {
   background-color: var(--footer-bg-color);
 }
 footer .container {
-  padding: 48px 15px 28px;
+  padding: 48px 0px 28px;
   border-bottom: 1px solid var(--footer-bdr-color);
 }
 address {
   font-style: inherit;
 }
 .location {
+  display: inline-block;
+  margin-top: 10px;
   color: var(--primary-white-color);
 }
+.coordinates .mail,
+.coordinates .tel {
+  display: block;
+  margin-top: 9px;
+  padding: 0px;
+}
+
+.join {
+  width: 206px;
+  /* height: 81px; */
+  /* background-color: aquamarine; */
+}
+.subscribe {
+  width: 570px;
+  /* height: 87px; */
+  /* background-color: aquamarine; */
+}
 .call {
+  display: block;
+  margin-bottom: 21px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--primary-white-color);
+}
+
+.join .list.social {
+  padding: 0px 0px;
 }
 .copyright {
   font-weight: 400;
