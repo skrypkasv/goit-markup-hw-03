@@ -1,10 +1,10 @@
 /* Позиционирование в шапке */
-nav.container {
+nav.wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.container .site-nav:last-child {
+.wrapper .site-nav:last-child {
   margin-left: auto;
 }
 

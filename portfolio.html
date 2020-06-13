@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/flex.css" />
+    <!-- <link rel="stylesheet" href="css/flex.css" /> -->
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -86,7 +86,7 @@
                 />
                 <h4 class="project-title">Технокряк</h4>
                 <p class="project-category">Веб-сайт</p>
-                <p>
+                <p class="invisible">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -104,7 +104,7 @@
                   Постер <span lang="en">New Orlean vs Golden Star</span>
                 </h4>
                 <p class="project-category">Дизайн</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -121,7 +121,7 @@
                   Ресторан <span lang="en">Seafood</span>
                 </h4>
                 <p class="project-category">Приложение</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -134,7 +134,7 @@
                   Проект <span lang="en">Prime</span>
                 </h4>
                 <p class="project-category">Маркетинг</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -151,7 +151,7 @@
                   Проект <span lang="en">Boxes</span>
                 </h4>
                 <p class="project-category">Приложение</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -168,7 +168,7 @@
                   Inspiration has no Borders
                 </h4>
                 <p class="project-category">Веб-сайт</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -185,7 +185,7 @@
                   Издание <span lang="en">Limited Edition</span>
                 </h4>
                 <p class="project-category">Дизайн</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -196,7 +196,7 @@
                 <img src="./images/label.jpg" alt="бирка" width="370" />
                 <h4 class="project-title">Проект <span lang="en">LAB</span></h4>
                 <p class="project-category">Маркетинг</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -211,7 +211,7 @@
                 />
                 <h4 class="project-title" lang="en">Growing Business</h4>
                 <p class="project-category">Приложение</p>
-                <p>
+                <p class="invisible">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
                   ex eveniet maiores molestias ducimus sequi sunt iusto nihil.
                 </p>
@@ -224,47 +224,49 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container under">
-        <div class="coordinates">
-          <a href="./index.html" class="logo" lang="en"
-            ><span class="web">Web</span>
-            <span class="studio-bottom">Studio</span></a
-          >
+      <div class="container">
+        <div class="under">
+          <div class="coordinates">
+            <a href="./index.html" class="logo" lang="en"
+              ><span class="web">Web</span>
+              <span class="studio-bottom">Studio</span></a
+            >
 
-          <!--Адрес+контакты -->
-          <address>
-            <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
-            <a href="mailto:info@devstudio.com" class="mail">
-              info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="tel">
-              +38 096 111 11 11
-            </a>
-          </address>
-        </div>
+            <!--Адрес+контакты -->
+            <address>
+              <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
+              <a href="mailto:info@devstudio.com" class="mail">
+                info@devstudio.com
+              </a>
+              <a href="tel:+380961111111" class="tel">
+                +38 096 111 11 11
+              </a>
+            </address>
+          </div>
 
-        <!-- присоединяйтесь -->
-        <div class="join">
-          <b class="call">присоединяйтесь</b>
-          <ul class="list social">
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на Instagram"></a>
-            </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на Twitter"></a>
-            </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на Facebook"></a>
-            </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на LinkedIn"></a>
-            </li>
-          </ul>
-        </div>
+          <!-- присоединяйтесь -->
+          <div class="join">
+            <b class="call">присоединяйтесь</b>
+            <ul class="list social">
+              <li class="item">
+                <a href="" class="link" aria-label="Ссылка на Instagram"></a>
+              </li>
+              <li class="item">
+                <a href="" class="link" aria-label="Ссылка на Twitter"></a>
+              </li>
+              <li class="item">
+                <a href="" class="link" aria-label="Ссылка на Facebook"></a>
+              </li>
+              <li class="item">
+                <a href="" class="link" aria-label="Ссылка на LinkedIn"></a>
+              </li>
+            </ul>
+          </div>
 
-        <!-- Подпишитесь на рассылку -->
-        <div class="subscribe">
-          <b class="call">Подпишитесь на рассылку</b>
+          <!-- Подпишитесь на рассылку -->
+          <div class="subscribe">
+            <b class="call">Подпишитесь на рассылку</b>
+          </div>
         </div>
       </div>
       <!--О разработчиках -->
