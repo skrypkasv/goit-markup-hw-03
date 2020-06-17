@@ -7,7 +7,6 @@
   --footer-bg-color: #2f303a;
   --border-color: #ececec;
   --project-bdr-color: #eeeeee;
-  --sec-clients-bdr-color: #afb1b8;
   --footer-bdr-color: rgba(255, 255, 255, 0.1);
 }
 /*  */
@@ -297,45 +296,20 @@ nav.container {
   padding: 94px 0px;
   border-bottom: 1px solid var(--border-color);
 }
-.features .section-subtitle {
-  margin-top: 30px;
-}
 .features p {
-  margin-top: 10px;
   margin-bottom: 0px;
-}
-.features .item {
-  display: block;
-  width: calc((100% - 90px) / 4);
-  /* outline: 1px solid navy; */
-  /* background-color: plum; */
 }
 /*Позиционирование в "Особенности компании" */
 .features > .list {
   display: flex;
 }
+.features .item {
+  display: block;
+  width: calc((100% - 90px) / 4);
+  /* background-color: plum; */
+}
 .features .item:not(:last-child) {
   margin-right: 30px;
-}
-.features > .list .link {
-  display: block;
-  width: 100%;
-}
-.features > .list img {
-  display: block;
-  border-style: none;
-  margin: auto;
-}
-.click-img {
-  display: flex;
-  width: 100%;
-  height: 120px;
-  background-color: var(--secondary-white-color);
-  border-radius: 4px;
-}
-.click-img:hover,
-.click-img:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /*  */
 /*  */
@@ -431,32 +405,11 @@ nav.container {
 /* Постоянные клиенты */
 .list.companies > .item {
   display: block;
+  outline: 1px solid navy;
   width: calc((100% - 150px) / 6);
   height: 90px;
-
-  background-color: var(--primary-white-color);
-
-  border: 1px solid var(--sec-clients-bdr-color);
-  border-radius: 4px;
-
   text-align: center;
 }
-.companies > .item .link {
-  background-color: transparent;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.companies > .item img {
-  border-style: none;
-  margin: auto;
-}
-
-.companies > .item:hover,
-.companies > .item:focus {
-  border: 1px solid var(--accent-color);
-}
-
 /* Позиционирование в "Постоянные клиенты" */
 .list.companies {
   display: flex;
